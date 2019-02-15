@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tamiaki", "Tamiaki\Tamiaki\Tamiaki.csproj", "{03811D9D-9163-4982-A98E-43F9BB025373}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tamiaki", "Tamiaki\Tamiaki\Tamiaki.csproj", "{03811D9D-9163-4982-A98E-43F9BB025373}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tamiaki.Android", "Tamiaki\Tamiaki.Android\Tamiaki.Android.csproj", "{81D8F40F-0F92-4BA2-B8FD-DDCD4996F4A6}"
 EndProject
@@ -228,6 +228,8 @@ Global
 		{261DA280-D042-4FCC-A1B0-992F692CA3A4}.AppStore|x86.Build.0 = Release|x86
 		{261DA280-D042-4FCC-A1B0-992F692CA3A4}.AppStore|x86.Deploy.0 = Release|x86
 		{261DA280-D042-4FCC-A1B0-992F692CA3A4}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{261DA280-D042-4FCC-A1B0-992F692CA3A4}.Debug|Any CPU.Build.0 = Debug|x86
+		{261DA280-D042-4FCC-A1B0-992F692CA3A4}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{261DA280-D042-4FCC-A1B0-992F692CA3A4}.Debug|ARM.ActiveCfg = Debug|ARM
 		{261DA280-D042-4FCC-A1B0-992F692CA3A4}.Debug|ARM.Build.0 = Debug|ARM
 		{261DA280-D042-4FCC-A1B0-992F692CA3A4}.Debug|ARM.Deploy.0 = Debug|ARM
