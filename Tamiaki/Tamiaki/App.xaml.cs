@@ -30,6 +30,7 @@ namespace Tamiaki
         {
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<TamiakiMenuPage, TamiakiMenuPageViewModel>();
         }
     }
 }
