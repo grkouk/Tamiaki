@@ -1,8 +1,10 @@
-﻿using Android.App;
+﻿using System.IO;
+using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Prism;
 using Prism.Ioc;
+using Environment = System.Environment;
 
 namespace Tamiaki.Droid
 {
