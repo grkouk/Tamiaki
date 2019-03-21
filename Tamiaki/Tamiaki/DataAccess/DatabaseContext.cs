@@ -10,19 +10,21 @@ namespace Tamiaki.DataAccess
 {
    public  class DatabaseContext : DbContext 
     {
+        private readonly IDbPath _dbPath;
         public DbSet<Product> Products { get; set; }
         public DbSet<CashRegCategory> CashRegCategories { get; set; }
 
-        public DatabaseContext()
+        public DatabaseContext(IDbPath dbPath)
         {
-            
+            _dbPath = dbPath;
+
             this.Database.EnsureCreated();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
 
-            var dbPath = DependencyService.Get<IDbPath>().GetDbPath();
+            var dbPath = _dbPath.GetDbPath();
             optionsBuilder.UseSqlite($"Filename={dbPath}");
         }
     }

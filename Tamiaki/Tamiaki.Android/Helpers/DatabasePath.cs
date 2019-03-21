@@ -2,7 +2,7 @@
 using Tamiaki.Droid.Helpers;
 using Tamiaki.Helpers;
 
-[assembly: Xamarin.Forms.Dependency(typeof(DatabasePath))]
+
 namespace Tamiaki.Droid.Helpers
 {
 
@@ -15,7 +15,7 @@ namespace Tamiaki.Droid.Helpers
 
         public string GetDbPath()
         {
-            return Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "EFCoreDB.db");
+            return Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "TamiakiDB.db");
         }
     }
 }

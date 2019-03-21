@@ -43,8 +43,8 @@ namespace Tamiaki.ViewModels
             MenuItems.Add(new MyMenuItem()
             {
                 Icon = "ic_viewb",
-                // PageName = nameof(CategoryPage),
-                Title = "Categories"
+                PageName = nameof(ProductPage),
+                Title = "Products Test"
             });
            
             NavigateCommand = new DelegateCommand(Navigate);

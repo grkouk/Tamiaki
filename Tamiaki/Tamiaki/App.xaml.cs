@@ -34,6 +34,7 @@ namespace Tamiaki
             containerRegistry.RegisterForNavigation<TamiakiMenuPage, TamiakiMenuPageViewModel>();
             containerRegistry.RegisterForNavigation<ScannerPage, ScannerPageViewModel>();
             containerRegistry.RegisterForNavigation<MenuPage, MenuPageViewModel>();
+            containerRegistry.RegisterForNavigation<ProductPage, ProductPageViewModel>();
         }
     }
 }

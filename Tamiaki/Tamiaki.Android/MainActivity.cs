@@ -4,6 +4,8 @@ using Android.Content.PM;
 using Android.OS;
 using Prism;
 using Prism.Ioc;
+using Tamiaki.Droid.Helpers;
+using Tamiaki.Helpers;
 using Environment = System.Environment;
 
 namespace Tamiaki.Droid
@@ -33,6 +35,7 @@ namespace Tamiaki.Droid
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             // Register any platform specific implementations
+            containerRegistry.Register<IDbPath, DatabasePath>();
         }
     }
 }
