@@ -2,6 +2,7 @@
 using Prism.Mvvm;
 using System.Collections.ObjectModel;
 using Prism.Navigation;
+using Tamiaki.Helpers;
 using Tamiaki.Views;
 using Tamiaki.Models;
 using Xamarin.Forms;
@@ -12,11 +13,11 @@ namespace Tamiaki.ViewModels
     {
         private INavigationService _navigationService;
         public ObservableCollection<MyMenuItem> MenuItems { get; set; }
-        private MyMenuItem selectedMenuItem;
+        private MyMenuItem _selectedMenuItem;
         public MyMenuItem SelectedMenuItem
         {
-            get => selectedMenuItem;
-            set => SetProperty(ref selectedMenuItem, value);
+            get => _selectedMenuItem;
+            set => SetProperty(ref _selectedMenuItem, value);
         }
 
         public DelegateCommand NavigateCommand { get; private set; }
@@ -46,13 +47,20 @@ namespace Tamiaki.ViewModels
                 PageName = nameof(ProductPage),
                 Title = "Products Test"
             });
-           
+            MenuItems.Add(new MyMenuItem()
+            {
+                Icon = "ic_viewb",
+                PageName = nameof(SettingsPage),
+                Title = "Settings"
+            });
+
             NavigateCommand = new DelegateCommand(Navigate);
         }
         async void Navigate()
         {
             await _navigationService.NavigateAsync(nameof(NavigationPage) + "/" + SelectedMenuItem.PageName);
-            //await _navigationService.NavigateAsync( SelectedMenuItem.PageName);
+           // await _navigationService.NavigateAsync( SelectedMenuItem.PageName);
+
         }
     }
 }

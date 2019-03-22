@@ -1,4 +1,4 @@
-﻿namespace Tamiaki.Models
+﻿namespace Tamiaki.Helpers
 {
     public class SearchListItem
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Tamiaki.Models
+namespace Tamiaki.Helpers
 {
     /// <summary>
     /// Class that is used in all data filters

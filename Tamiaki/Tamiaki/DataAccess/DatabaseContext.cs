@@ -13,6 +13,7 @@ namespace Tamiaki.DataAccess
         private readonly IDbPath _dbPath;
         public DbSet<Product> Products { get; set; }
         public DbSet<CashRegCategory> CashRegCategories { get; set; }
+        public DbSet<FpaKat> FpaKats { get; set; }
 
         public DatabaseContext(IDbPath dbPath)
         {
