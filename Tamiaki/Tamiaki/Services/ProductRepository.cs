@@ -43,8 +43,6 @@ namespace Tamiaki.Services
                     var e = new Exception(response.ToString());
                     throw e;
                 }
-
-
             }
             catch (Exception e)
             {

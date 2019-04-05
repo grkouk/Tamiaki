@@ -50,6 +50,12 @@ namespace Tamiaki.ViewModels
             MenuItems.Add(new MyMenuItem()
             {
                 Icon = "ic_viewb",
+                PageName = nameof(ProductPage),
+                Title = "Product List"
+            });
+            MenuItems.Add(new MyMenuItem()
+            {
+                Icon = "ic_viewb",
                 PageName = nameof(SettingsPage),
                 Title = "Settings"
             });

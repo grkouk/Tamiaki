@@ -16,9 +16,16 @@
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
     <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
   </ItemGroup>
-
   <ItemGroup>
-    <ProjectReference Include="..\..\..\GrKoukInfoSystem\InfoSystem\GrKouk.InfoSystem.Dtos\GrKouk.InfoSystem.Dtos.csproj" />
+    <Reference Include="GrKouk.InfoSystem.Definitions">
+      <HintPath>..\..\..\GrKoukInfoSystem\InfoSystem\GrKouk.InfoSystem.Definitions\bin\Debug\netstandard2.0\GrKouk.InfoSystem.Definitions.dll</HintPath>
+    </Reference>
+    <Reference Include="GrKouk.InfoSystem.Domain">
+      <HintPath>..\..\..\GrKoukInfoSystem\InfoSystem\GrKouk.InfoSystem.Domain\bin\DebugWeb\netstandard2.0\GrKouk.InfoSystem.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="GrKouk.InfoSystem.Dtos">
+      <HintPath>..\..\..\GrKoukInfoSystem\InfoSystem\GrKouk.InfoSystem.Dtos\bin\DebugWeb\netstandard2.0\GrKouk.InfoSystem.Dtos.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
