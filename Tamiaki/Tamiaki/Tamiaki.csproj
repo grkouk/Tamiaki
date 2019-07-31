@@ -1,12 +1,52 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>Full</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.0.0-preview3.19153.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Xam.Plugins.Settings" Version="4.1.0-beta" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.394984-pre10" />
+    <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1233-pre" />
+    <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
+    <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="GrKouk.InfoSystem.Definitions">
+      <HintPath>..\..\..\GrKoukInfoSystem\InfoSystem\GrKouk.InfoSystem.Definitions\bin\Debug\netstandard2.0\GrKouk.InfoSystem.Definitions.dll</HintPath>
+    </Reference>
+    <Reference Include="GrKouk.InfoSystem.Domain">
+      <HintPath>..\..\..\GrKoukInfoSystem\InfoSystem\GrKouk.InfoSystem.Domain\bin\DebugWeb\netstandard2.0\GrKouk.InfoSystem.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="GrKouk.InfoSystem.Dtos">
+      <HintPath>..\..\..\GrKoukInfoSystem\InfoSystem\GrKouk.InfoSystem.Dtos\bin\DebugWeb\netstandard2.0\GrKouk.InfoSystem.Dtos.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.0.0.135214-pre4" />
-    <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.708-pre" />
+    <EmbeddedResource Update="Views\MenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ProductListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ProductPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ScannerPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SettingsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\TamiakiMenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

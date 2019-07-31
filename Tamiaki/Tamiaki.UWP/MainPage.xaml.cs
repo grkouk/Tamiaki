@@ -14,6 +14,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Tamiaki.Helpers;
+using Tamiaki.UWP.Helpers;
 
 namespace Tamiaki.UWP
 {
@@ -22,7 +24,7 @@ namespace Tamiaki.UWP
         public MainPage()
         {
             this.InitializeComponent();
-
+            ZXing.Net.Mobile.Forms.WindowsUniversal.ZXingScannerViewRenderer.Init();
             LoadApplication(new Tamiaki.App(new UwpInitializer()));
         }
     }
@@ -32,6 +34,7 @@ namespace Tamiaki.UWP
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             // Register any platform specific implementations
+            containerRegistry.Register<IDbPath, DatabasePath>();
         }
     }
 }
