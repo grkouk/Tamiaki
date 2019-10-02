@@ -10,9 +10,9 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.0.0-preview3.19153.1" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     <PackageReference Include="Xam.Plugins.Settings" Version="4.1.0-beta" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
-    <PackageReference Include="Xamarin.Forms" Version="4.0.0.394984-pre10" />
-    <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1233-pre" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.2.0-pre" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.496342-pre2" />
+    <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1347-pre" />
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
     <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
   </ItemGroup>
